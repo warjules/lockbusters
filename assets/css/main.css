@@ -1050,7 +1050,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 812px) {
 
 			.row {
 				display: flex;
@@ -1348,7 +1348,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 812px) {
 
 			body, input, textarea, select {
 				font-size: 12pt;
@@ -1384,7 +1384,7 @@ input, select, textarea {
 		letter-spacing: -0.015em;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 812px) {
 
 		h1 {
 			font-size: 1.75em;
@@ -1536,7 +1536,7 @@ input, select, textarea {
 			color: #aaa;
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 812px) {
 
 			header {
 				margin: 0 0 1em 0;
@@ -1668,7 +1668,7 @@ input, select, textarea {
 			padding: 0.5em 1.25em 0.5em 1.25em;
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 812px) {
 
 			input[type="button"],
 			input[type="submit"],
@@ -1717,7 +1717,7 @@ input, select, textarea {
 				margin-left: 0;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 812px) {
 
 			ul.actions li {
 				display: block;
@@ -1923,7 +1923,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 812px) {
 
 			#wrapper {
 				padding: 1em 0;
@@ -1970,7 +1970,7 @@ input, select, textarea {
 				opacity: 0;
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 812px) {
 
 				#main > .panel {
 					padding: 2em 1.5em 1.5em 1.5em;
@@ -2123,7 +2123,7 @@ input, select, textarea {
 
 				}
 
-				@media screen and (max-width: 736px) {
+				@media screen and (max-width: 812px) {
 
 					#main > .panel.intro .pic {
 						height: 20em;
@@ -2181,7 +2181,7 @@ input, select, textarea {
 					border-left: 0;
 				}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 812px) {
 
 			#footer .copyright li {
 				padding-left: 0.5em;
