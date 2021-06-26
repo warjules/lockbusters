@@ -1366,7 +1366,7 @@ input, select, textarea {
 
 	strong, b, h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
-		color: #d41010;
+		color: #008f2b;
 	}
 
 	h1 {
@@ -1816,7 +1816,7 @@ input, select, textarea {
 				transition: border-bottom-width .25s ease-in-out;
 			}
 
-			#nav a img {
+			#nav a span {
 				display: block;
 				position: absolute;
 				background: #222222;
@@ -1835,7 +1835,7 @@ input, select, textarea {
 				margin-left: -2.75em;
 			}
 
-				#nav a img:after {
+				#nav a span:after {
 					content: '';
 					display: block;
 					position: absolute;
