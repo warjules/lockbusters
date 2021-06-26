@@ -1,7 +1,8 @@
 ## Welcome to GitHub Pages
 
 
-<iframe src="https://lockbusters.4escape.io/droplet/?rooms=60d0825e16393a24a521b52e&mode=list" scrolling="no" height="100%" style="width:100%" allowtransparency="true"></iframe>
+<div class="forescape" data-subdomain="lockbusters" data-type="bookings" data-rooms="60d0825e16393a24a521b52e"></div>
+<br>
 
 You can use the [editor on GitHub](https://github.com/warjules/lockbusters/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -38,3 +39,6 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+<script>!function(e,t){var r=e.createElement(t),a=e.getElementsByTagName(t)[0],n=new Date,s=""+n.getFullYear()+("0"+(n.getMonth()+1)).slice(-2)+("0"+n.getDate()).slice(-2);r.defer=1,r.src="https://lockbusters.4escape.io/public/js/iframe.min.js?v="+s,a.parentNode.insertBefore(r,a)}(document,"script");</script>
