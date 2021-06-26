@@ -1,7 +1,7 @@
 ## Welcome to GitHub Pages
 
 
-<iframe src="https://lockbusters.4escape.io/droplet/?rooms=60d0825e16393a24a521b52e&mode=list" scrolling="no" height="80" style="width:100%" allowtransparency="true"></iframe>
+<iframe src="https://lockbusters.4escape.io/droplet/?rooms=60d0825e16393a24a521b52e&mode=list" scrolling="no" height="100%" style="width:100%" allowtransparency="true"></iframe>
 
 You can use the [editor on GitHub](https://github.com/warjules/lockbusters/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
