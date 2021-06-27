@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("fontawesome-all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+
 
 /*
 	Astral by HTML5 UP
@@ -24,6 +26,8 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+
+	
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1377,6 +1381,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 2.9em;
+		font-family: 'McLaren', cursive;
 		line-height: 1.2;
 		letter-spacing: -0.015em;
 	}
@@ -1532,18 +1537,18 @@ input, select, textarea {
 		}
 
 	header {
-		margin: 0 0 1.5em 0;
+		margin: 0 0 1.7em 0;
 	}
 
 		header > p {
 			margin: 0.5em 0 0 0;
-			color: #aaa;
+			color: rgb(204, 204, 204);
 		}
 
 		@media screen and (max-width: 736px) {
 
 			header {
-				margin: 0 0 1em 0;
+				margin: 0 0 1.1em 0;
 			}
 
 		}
