@@ -1331,7 +1331,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #929292;
+		color: #e7e7e7;
 		font-size: 20pt;
 		line-height: 1.65em;
 	}
@@ -1388,7 +1388,7 @@ input, select, textarea {
 
 	h3, h4, h5, h6 {
 		font-size: 2.2em;
-		line-height: 1.1;
+		line-height: 1.2;
 		letter-spacing: -0.015em;
 	}
 
@@ -1537,18 +1537,20 @@ input, select, textarea {
 		}
 
 	header {
-		margin: 0 0 1.7em 0;
+		margin: 0 0 1.3em 0;
 	}
 
 		header > p {
 			margin: 0.5em 0 0 0;
-			color: rgb(204, 204, 204);
+			color: rgb(138, 138, 138);
 		}
 
 		@media screen and (max-width: 736px) {
 
 			header {
-				margin: 0 0 1.1em 0;
+				margin: 0 0 1em 0;
+				font-size: 0.8em;
+				line-height: 1.4em;
 			}
 
 		}
