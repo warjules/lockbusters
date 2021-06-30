@@ -2092,6 +2092,7 @@ input, select, textarea {
 						margin-bottom: 1.2em;
 						width: 95%;
 						height: 4em;
+						text-shadow: #000000 1px 0 10px;
 						background: rgba(0, 0, 0, 0);
 						color: #ffffff;
 						text-align: left;
@@ -2103,6 +2104,7 @@ input, select, textarea {
 						
 						color: #ffffff;
 						font-size: 2em;
+						text-shadow: #000000 1px 0 10px;
 						font-family: 'McLaren', cursive;
 						line-height: 1.2em;
 						padding : -2em 0;
