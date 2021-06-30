@@ -3,11 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 
 
-/*
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1929,7 +1924,7 @@ input, select, textarea {
 
 			#wrapper {
 				padding: 1.5em 0;
-				max-width: calc(100% - 8em);
+				max-width: calc(100% - 4em);
 			}
 
 		}
@@ -2087,6 +2082,33 @@ input, select, textarea {
 						padding-right: 0.25em;
 					}
 
+
+
+					#main > .panel.intro .pic .textoverlay {
+						display: block;
+						position: absolute;
+						left: 5%;
+						bottom: 5%;
+						margin-bottom: 1.2em;
+						width: 95%;
+						height: 4em;
+						background: rgba(0, 0, 0, 0);
+						color: #ffffff;
+						text-align: left;
+						z-index: 1;
+					
+					}
+
+					#main > .panel.intro .pic .textoverlaystyle {
+						
+						color: #ffffff;
+						font-size: 2.3em;
+						line-height: 1.2em;
+						padding : -2em 0;
+						margin : 0 0 0;
+					
+					}
+
 				#main > .panel.intro header {
 					-moz-flex-grow: 1;
 					-webkit-flex-grow: 1;
@@ -2112,7 +2134,7 @@ input, select, textarea {
 						margin: 0.25em 0 0 0;
 					}
 
-				@media screen and (max-width: 980px) {
+				@media screen and (max-width: 1980px) {
 
 					#main > .panel.intro {
 						-moz-flex-direction: column;
@@ -2137,7 +2159,7 @@ input, select, textarea {
 				@media screen and (max-width: 736px) {
 
 					#main > .panel.intro .pic {
-						height: 20em;
+						height: 15em;
 					}
 
 					#main > .panel.intro header {
@@ -2150,6 +2172,8 @@ input, select, textarea {
 						}
 
 				}
+
+
 
 /* Footer */
 
