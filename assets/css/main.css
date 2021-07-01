@@ -1305,8 +1305,10 @@ input, select, textarea {
 	}
 
 	body {
-		background-color:#F2006D;
-		background-repeat: repeat, no-repeat;
+		background-image: url(icons/chef.png) ;
+		background: rgb(242,0,109);
+		background: linear-gradient(173deg, rgba(242,0,109,1) 6%, rgba(65,0,29,1) 100%);
+		background-repeat: no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
@@ -2088,12 +2090,13 @@ input, select, textarea {
 						display: block;
 						position: absolute;
 						left: 5%;
-						bottom: 5%;
-						margin-bottom: 1.2em;
+						bottom:2em;
+						margin-bottom: 1em;
+						line-height: 1.3em;
+						padding-right: 1em;
+						height: 5em;
 						width: 95%;
-						height: 4em;
-						text-shadow: #000000 1px 0 10px;
-						background: rgba(0, 0, 0, 0);
+						text-shadow: #000000 0px 0 4px;
 						color: #ffffff;
 						text-align: left;
 						z-index: 1;
@@ -2102,12 +2105,15 @@ input, select, textarea {
 
 					#main > .panel.intro .pic .textoverlaystyle {
 						
+						display: block;
+						position: relative;		
 						color: #ffffff;
-						font-size: 2em;
+						font-size: 200%;
+						line-height: 1.2em;
+						padding-right: 1.3em;
 						text-shadow: #000000 1px 0 10px;
 						font-family: 'McLaren', cursive;
-						line-height: 1.2em;
-						padding : -2em 0;
+						padding-right : 1.2em;
 						margin : 0 0 0;
 					
 					}
