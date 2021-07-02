@@ -1305,9 +1305,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url(icons/chef.png) ;
 		background: rgb(242,0,109);
-		background: linear-gradient(173deg, rgba(242,0,109,1) 6%, rgba(65,0,29,1) 100%);
+		background: linear-gradient(173deg, rgba(242,0,109,1) 6%, rgba(41,0,18,1) 100%);
 		background-repeat: no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
