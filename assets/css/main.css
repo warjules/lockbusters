@@ -1778,7 +1778,7 @@ input, select, textarea {
 
 #nav {
 	text-align: center;
-	height: 4.25em;
+	height: 4em;
 	cursor: default;
 }
 
@@ -2131,9 +2131,11 @@ input, select, textarea {
 
 					#main > .panel.intro header h1 {
 						line-height: 1.4em;
-						margin: 0.9em 0 1.4em 0;
-						font-size: 0.9em;
-						color: #fff;
+						margin: 0.5em 0 1.4em 0;
+						font-size: 0.8em;
+						font-weight: 100;
+						letter-spacing: 0.03em;
+						color: #ffffff;
 
 					}
 
@@ -2195,6 +2197,12 @@ input, select, textarea {
 					
 					font-size: 180%;
 			
+				}
+
+				#nav a {
+			
+				
+				margin: 0 0.2em 0 0.2em;
 				}
 			}
 
