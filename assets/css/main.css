@@ -2158,7 +2158,8 @@ input, select, textarea {
 						}
 
 						#main > .panel.intro header {
-							padding: 4em;
+							padding: 1em 6em 1em 6em;
+							width: 90%;
 							text-align: center;
 						}
 
@@ -2167,11 +2168,11 @@ input, select, textarea {
 				@media screen and (max-width: 736px) {
 
 					#main > .panel.intro .pic {
-						height: 15em;
+						height: 30em;
 					}
 
 					#main > .panel.intro header {
-						padding: 2.75em 2em 2.5em 2em;
+						padding: 0em 1em 0em 1em;
 					}
 
 						#main > .panel.intro header p {
