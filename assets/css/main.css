@@ -2130,8 +2130,11 @@ input, select, textarea {
 				}
 
 					#main > .panel.intro header h1 {
-						line-height: 1.25em;
-						margin-bottom: 0;
+						line-height: 1.4em;
+						margin: 0.9em 0 1.4em 0;
+						font-size: 0.9em;
+						color: #fff;
+
 					}
 
 					#main > .panel.intro header p {
@@ -2152,11 +2155,13 @@ input, select, textarea {
 
 						#main > .panel.intro .pic {
 							height: 25em;
-							width: 100%;
+							width: 96%;
+						
+
 						}
 
 						#main > .panel.intro header {
-							padding: 0.5em 8em 0.5em 8em;
+							padding: 1.5em 8em 0.5em 8em;
 							width: 80%;
 							text-align: center;
 						}
@@ -2166,11 +2171,12 @@ input, select, textarea {
 				@media screen and (max-width: 736px) {
 
 					#main > .panel.intro .pic {
-						height: 30em;
+						height: 38em; 
+						width: 100%;
 					}
 
 					#main > .panel.intro header {
-						padding: 0em 1em 0em 1em;
+						padding: 1.2em 1em 0em 1em;
 					}
 
 						#main > .panel.intro header p {
