@@ -1838,8 +1838,8 @@ input, select, textarea {
 			-webkit-transition: opacity .25s ease-in-out;
 			-ms-transition: opacity .25s ease-in-out;
 			transition: opacity .25s ease-in-out;
-			width: 5.5em;
-			margin-left: -2.75em;
+			width: 8em;
+			margin-left: -4em;
 		}
 
 			#nav a span:after {
@@ -2090,12 +2090,11 @@ input, select, textarea {
 						position: absolute;
 						left: 5%;
 						bottom:2em;
-						margin-bottom: 1em;
-						line-height: 1.3em;
+						line-height: 1.5em;
 						padding-right: 1em;
-						height: 5em;
+						height: 6em;
 						width: 95%;
-						text-shadow: #000000 0px 0 4px;
+						text-shadow: #000000 1px 0 4px;
 						color: #ffffff;
 						text-align: left;
 						z-index: 1;
@@ -2107,13 +2106,12 @@ input, select, textarea {
 						display: block;
 						position: relative;		
 						color: #ffffff;
-						font-size: 200%;
-						line-height: 1.2em;
-						padding-right: 1.3em;
+						font-size: 210%;
+						line-height: 1.3em;
+						padding-right: 0.5em;
 						text-shadow: #000000 1px 0 10px;
 						font-family: 'McLaren', cursive;
-						padding-right : 1.2em;
-						margin : 0 0 0;
+						margin : 0 0 0.1em 0;
 					
 					}
 
@@ -2158,8 +2156,8 @@ input, select, textarea {
 						}
 
 						#main > .panel.intro header {
-							padding: 1em 6em 1em 6em;
-							width: 90%;
+							padding: 0.5em 8em 0.5em 8em;
+							width: 80%;
 							text-align: center;
 						}
 
@@ -2182,6 +2180,17 @@ input, select, textarea {
 
 				}
 
+
+
+				@media screen and (max-width: 320px) {
+
+
+				#main > .panel.intro .pic .textoverlaystyle {
+					
+					font-size: 180%;
+			
+				}
+			}
 
 
 /* Footer */
