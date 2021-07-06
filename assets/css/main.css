@@ -1780,7 +1780,7 @@ input, select, textarea {
 
 #nav {
 	text-align: center;
-	height: 4em;
+	height: 3.8em;
 	cursor: default;
 }
 
@@ -1872,22 +1872,36 @@ input, select, textarea {
 				border-bottom-width: 0.5em;
 			}
 
+	@media screen and (min-width: 1280px) {
+
+		#nav {
+			height: 3.2em;
+		}
+
+		#nav a {
+		width: 2em;
+		height: 2em;
+		line-height: 2.5em;
+		font-size: 1.2em;
+		margin: 0 0.8em 0.8em;
+	}
+	}
+
 	@media screen and (max-width: 980px) {
 
 		#nav a span {
 			display: none;
 		}
-
 	}
 
 /* Wrapper */
 
 	#wrapper {
-		width: 55em;
+		width: 45em;
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
-		padding: 4em 0;
+		padding: 2em 0;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1904,10 +1918,10 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		-moz-transition: opacity 1s ease-in-out;
-		-webkit-transition: opacity 1s ease-in-out;
-		-ms-transition: opacity 1s ease-in-out;
-		transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 0.8s ease-in-out;
+		-webkit-transition: opacity 0.8s ease-in-out;
+		-ms-transition: opacity 0.8s ease-in-out;
+		transition: opacity 0.8s ease-in-out;
 	}
 
 		body.is-preload #wrapper {
@@ -2209,6 +2223,7 @@ input, select, textarea {
 			}
 
 
+			
 /* Footer */
 
 	#footer {
