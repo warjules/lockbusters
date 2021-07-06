@@ -1935,10 +1935,10 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		-moz-transition: opacity 0.8s ease-in-out;
-		-webkit-transition: opacity 0.8s ease-in-out;
-		-ms-transition: opacity 0.8s ease-in-out;
-		transition: opacity 0.8s ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-webkit-transition: opacity 1s ease-in-out;
+		-ms-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
 	}
 
 		body.is-preload #wrapper {
