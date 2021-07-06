@@ -1425,10 +1425,24 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 0.5em #ddd;
-		padding: 1em 0 1em 2em;
-		font-style: italic;
+		border-left: solid 0.2em #ddd;
+		padding: 0.5em 0 1px 2em;
+		font-style: none;
 	}
+
+	blockquote p {
+		color: #777777;
+		padding: 0.5em 0 0 0;
+		font-weight: 600;
+		
+	}
+	blockquote img {
+		display:block;
+		
+		padding: 0em 0 1em 0;
+		
+	}
+
 
 	em, i {
 		font-style: italic;
@@ -1848,7 +1862,7 @@ input, select, textarea {
 			background: #222222;
 			color: #ffffff;
 			top: -2.75em;
-			font-size: 0.3em;
+			font-size: 0.4em;
 			height: 2.25em;
 			line-height: 2.25em;
 			left: 50%;
@@ -1902,6 +1916,12 @@ input, select, textarea {
 		font-size: 1.2em;
 		margin: 0 0.8em 0.8em;
 	}
+
+	#nav a span {
+		font-size: 0.5em;
+		margin-top: -0.3em;
+	}
+
 	}
 
 	@media screen and (max-width: 980px) {
