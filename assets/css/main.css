@@ -1305,13 +1305,15 @@ input, select, textarea {
 	}
 
 	body {
-		background: rgb(242,0,109);
-		background: linear-gradient(173deg, rgba(242,0,109,1) 6%, rgba(41,0,18,1) 100%);
+		background-image: url('images/chef.png'), linear-gradient(173deg, rgba(242,0,109,1) 6%, rgba(41,0,18,1) 100%);
 		background-repeat: no-repeat;
-		background-size: auto, 100% 100%;
+		background-size: 90px, 100%;
+		background-position: center;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
+
+
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -1881,7 +1883,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		width: 45em;
+		width: 55em;
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
