@@ -1325,8 +1325,8 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-size: 30%, 100%;
 		background-position: right 50% top 50%, center;
-		background-attachment: fixed;
-		overflow-y: scroll;
+		background-attachment: fixed, fixed;
+		overflow-y: scroll, scroll;
 	}	
 	}
 
