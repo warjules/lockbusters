@@ -1342,11 +1342,6 @@ input, select, textarea {
 	}
 	
 	
-	/* Add the animation: property to whichever element you want to animate */
-	#elementToAnimate{
-	    animation: yourAnimation 1s ease 0s infinite normal none;
-	}
-	
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
