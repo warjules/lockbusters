@@ -1323,13 +1323,16 @@ input, select, textarea {
 		background-position: right 50% top 40vh, center;
 		background-attachment: fixed, fixed;
 		overflow-y: hidden, scroll;
-		animation: gradient 1s normal infinite;
+		animation: breath 1s normal infinite;
+		-moz-animation: breath 1s normal infinite;
+		-webkit-animation: breath 1s normal infinite;
+		-ms-animation: breath 1s normal infinite;
 
 	}	
 	}
 
 
-	@keyframes gradient {
+	@keyframes breath {
 		0% {
 			background-size: 28%, 100%;
 		}
