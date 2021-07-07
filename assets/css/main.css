@@ -1306,14 +1306,11 @@ input, select, textarea {
 
 	body {
 		background-image: linear-gradient(173deg, rgba(242,0,109,1) 6%, rgba(41,0,18,1) 100%);
-	
 		background-repeat: no-repeat;
 		background-size: 100%;
 		background-position: center;
 		background-attachment: fixed;
 		overflow-y: scroll;
-	
-
 	}
 
 
@@ -1321,15 +1318,34 @@ input, select, textarea {
 	{
 	body {
 		background-image: url('images/chef.png'), linear-gradient(173deg, rgba(242,0,109,1) 6%, rgba(41,0,18,1) 100%);
-	
 		background-repeat: no-repeat;
 		background-size: 30%, 100%;
 		background-position: right 50% top 40vh, center;
 		background-attachment: fixed, fixed;
 		overflow-y: hidden, scroll;
+		animation: gradient 1s normal infinite;
+
 	}	
 	}
 
+
+	@keyframes gradient {
+		0% {
+			background-size: 28%, 100%;
+		}
+		50% {
+			background-size: 25%, 100%;
+		}
+		100% {
+			background-size: 28%, 100%;
+		}
+	}
+	
+	
+	/* Add the animation: property to whichever element you want to animate */
+	#elementToAnimate{
+	    animation: yourAnimation 1s ease 0s infinite normal none;
+	}
 	
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1415,7 +1431,6 @@ input, select, textarea {
 
 		h2 {
 			font-size: 2.55em;
-		
 		}
 
 		h3, h4, h5, h6 {
