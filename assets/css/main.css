@@ -1319,14 +1319,14 @@ input, select, textarea {
 	body {
 		background-image: url('images/chef.png'), linear-gradient(173deg, rgba(242,0,109,1) 6%, rgba(41,0,18,1) 100%);
 		background-repeat: no-repeat;
-		background-size: 30%, 100%;
+		background-size: 28%, 100%;
 		background-position: right 50% top 40vh, center;
 		background-attachment: fixed, fixed;
 		overflow-y: hidden, scroll;
-		animation: breath 1.2s normal 4;
-		-moz-animation: breath 1.2s normal 4;
-		-webkit-animation: breath 1.2s normal 4;
-		-ms-animation: breath 1.2s normal 4;
+		animation: breath 1.1s normal 6;
+		-moz-animation: breath 1.1s normal 6;
+		-webkit-animation: breath 1.1s normal 6;
+		-ms-animation: breath 1.1s normal 6;
 
 	}	
 	}
