@@ -18,7 +18,9 @@ var options = {
 function openNav() {
 	document.getElementById("mySidepanel").style.width = "300px";
   document.getElementById("mySidepanel2").style.width = "300px";
-  document.getElementById("mySidepanel").style.outline = "1299px solid rgba(0, 0, 0, 0.3)";
+  document.getElementById("wrapper").style.opacity = "0.1";
+
+  
 
 
   }
@@ -27,6 +29,6 @@ function openNav() {
   function closeNav() {
 	document.getElementById("mySidepanel").style.width = "0px";
 	document.getElementById("mySidepanel2").style.width = "0px";
-  document.getElementById("mySidepanel").style.outline = "0";
+  document.getElementById("wrapper").style.opacity = "1";
 
   } 
