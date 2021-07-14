@@ -2475,15 +2475,16 @@ input, select, textarea {
 {
       border: 3px solid #ddd;
       border-radius: 30px;
-      background-color: white;
-      background-image:url('images/loupe-min.jpeg');
+      background-image: url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png');
+	  background-color: white;
 	  display: block;
 	  width: 100%;
 	  height: 38px;
 	  font-size: 21px;
 	  letter-spacing: 0.04em;
 	  color: #313131;
-      background-position: 8px 4px;
+	  background-size: 18px;
+      background-position: 8px 8px;
       background-repeat: no-repeat;
       padding: 8px 20px 8px 40px;
 	  margin-bottom: 4.5em;
