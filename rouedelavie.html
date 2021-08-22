@@ -304,7 +304,7 @@ function setValue(index, value) {
   
   
   function GetPrevDay(date){
-    date.setDate(date.getDate() 0); // move to next day.
+    date.setDate(date.getDate() +0); // move to next day.
     switch(date.getDay()) {
     case 0: //Sunday
     case 6: //Saturday
