@@ -134,7 +134,8 @@
   </div>
   
   <div class="area" style="display: none;">
-    <h2>All done!</h2>
+    <h2>Votre roue de la vie le <span id="past"></span></h2>
+    <p>Faites une capture d'écran !</p>
   </div>
 </div>
 
@@ -295,3 +296,31 @@ function setValue(index, value) {
 }
 
 </script>
+
+
+<script>
+  var today = new Date(); //  timezone
+  document.getElementById("past").innerHTML = FormatDate(GetPrevDay(today));
+  
+  
+  function GetPrevDay(date){
+    date.setDate(date.getDate() 0); // move to next day.
+    switch(date.getDay()) {
+    case 0: //Sunday
+    case 6: //Saturday
+      date = GetPrevDay(date);
+    }
+    return date;
+  }
+  
+  function FormatDate(date){
+    var months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+  
+    return date.getDate() + " " + months[date.getMonth()] +  " " + date.getFullYear();
+  }
+  
+  function TestprevDate(){
+    var date = new Date(document.getElementById("TestprevDate").value);
+    document.getElementById("result").innerHTML += "<br/>Selected day's next day is: " + FormatDate(GetPrevDay(date));
+  }
+  </script>
