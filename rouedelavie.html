@@ -154,7 +154,9 @@
   
   <div class="area" style="display: none;">
     <h2>Votre roue de la vie
-      <br> <span id="past"></span></h2>
+      <br> <span id="past"></span></h2>   
+         <br> <span id="today"></span></h2>
+
     <p>Faites une capture d'écran !</p>
   </div>
 </div>
@@ -325,7 +327,7 @@ function setValue(index, value) {
   
   
   function GetPrevDay(date){
-    date.setDate(date.getDate() -1); // move to next day.
+    date.setDate(date.getDate() +1); // move to next day.
     switch(date.getDay()) {
     case 0: //Sunday
     case 6: //Saturday
