@@ -22,7 +22,9 @@
   </div>
 
   <div class="area" style="display: none;">
-    <h2>Career</h2>
+    <h2>Pro</h2>
+    <p> Carrière / Activité / Etudes
+    </p>
     <div class="values">
       <div class="value" onclick="setValue(1, 1);">1</div>
       <div class="value" onclick="setValue(1, 2);">2</div>
@@ -38,7 +40,9 @@
   </div>
 
   <div class="area" style="display: none;">
-    <h2>Love</h2>
+    <h2>Amour</h2>
+    <p>Vie sentimentale / amoureuse / sexuelle
+    </p>
     <div class="values">
       <div class="value" onclick="setValue(2, 1);">1</div>
       <div class="value" onclick="setValue(2, 2);">2</div>
@@ -54,7 +58,10 @@
   </div>
 
   <div class="area" style="display: none;">
-    <h2>Spirituality</h2>
+    <h2>Spiritualité</h2>
+    <p>
+      Développement de soi / Sentiment de faire partie d'un tout plus grand
+    </p>
     <div class="values">
       <div class="value" onclick="setValue(3, 1);">1</div>
       <div class="value" onclick="setValue(3, 2);">2</div>
@@ -70,7 +77,10 @@
   </div>
 
   <div class="area" style="display: none;">
-    <h2>Family</h2>
+    <h2>Famille</h2>
+    <p>
+      Relations cercle familiale / Enfants
+    </p>
     <div class="values">
       <div class="value" onclick="setValue(4, 1);">1</div>
       <div class="value" onclick="setValue(4, 2);">2</div>
@@ -86,7 +96,10 @@
   </div>
 
   <div class="area" style="display: none;">
-    <h2>Money</h2>
+    <h2>Finance</h2>
+    <p>
+      Argent / Abondance
+    </p>
     <div class="values">
       <div class="value" onclick="setValue(5, 1);">1</div>
       <div class="value" onclick="setValue(5, 2);">2</div>
@@ -103,6 +116,9 @@
 
   <div class="area" style="display: none;">
     <h2>Fun</h2>
+    <p>
+      Loisirs / Divertissements / Hobbies
+    </p>
     <div class="values">
       <div class="value" onclick="setValue(6, 1);">1</div>
       <div class="value" onclick="setValue(6, 2);">2</div>
@@ -118,7 +134,10 @@
   </div>
 
   <div class="area" style="display: none;">
-    <h2>Friends</h2>
+    <h2>Amis</h2>
+    <p>
+      Relations sociales / Amitiées
+    </p>
     <div class="values">
       <div class="value" onclick="setValue(7, 1);">1</div>
       <div class="value" onclick="setValue(7, 2);">2</div>
@@ -223,7 +242,7 @@ chart.data = [
     color: chart.colors.next()
   },
   {
-    category: "Carrière",
+    category: "Pro",
     value: 0,
     color: chart.colors.next()
   },
@@ -304,7 +323,7 @@ function setValue(index, value) {
   
   
   function GetPrevDay(date){
-    date.setDate(date.getDate() +0); // move to next day.
+    date.setDate(date.getDate() +1); // move to next day.
     switch(date.getDay()) {
     case 0: //Sunday
     case 6: //Saturday
