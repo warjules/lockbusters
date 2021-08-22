@@ -5,6 +5,7 @@
 <div class="areas">
   <div class="area">
     <h2>Santé</h2>
+    
     <p>
       Etat de santé général<br>
   Forme physique, pratiques fitness ou sportives<br>
@@ -224,9 +225,16 @@ Bien-être dans son corps.
 
   
   <div class="area" style="display: none;">
-    <img height="100%" width="150px" href="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2148522706/settings_images/Fi0XqL2ATTeUhWp91gUt_phenix-logo.jpg">
-    <h2><span id="past"></span></h2>   
+    <img width="150px" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2148522706/settings_images/Fi0XqL2ATTeUhWp91gUt_phenix-logo.jpg">
 
+    <div class="calendar-wrapper">
+      <div class="calendar-today">
+        <div class="month-label"></div>
+        <div class="day-label"></div>
+        <div class="weekday-label"></div>
+        <div class="current-time"></div>
+      </div> 
+</div>
     <p>Souriez et faites une capture d'écran !</p>
   </div>
 </div>
@@ -267,6 +275,41 @@ overflow:hidden;
 .areas .value:hover {
   background: #000;
   color: #fff;
+}
+
+
+.calendar-wrapper {
+  display: flex;
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+}
+
+.calendar-today {
+  background-color: white;
+  border: 5px solid #B79A73;
+  color: #B79A73;
+  font-family: 'Lato', sans serif;
+  padding: 8px 20px 10px;
+  font-size: 9px;
+  text-align: center;
+  width: 70px;
+}
+
+.month-label { 
+  border-bottom: 2px solid;
+  font-size: 15px;
+  color: #B79A73;
+}
+
+.day-label {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  padding-top: 5px;
+  color: #B79A73;
+
 }
 
 </style>
@@ -418,28 +461,16 @@ function setValue(index, value) {
 
 
 <script>
-  var today = new Date(); //  timezone
-  document.getElementById("past").innerHTML = FormatDate(GetPrevDay(today));
-  
-  
-  function GetPrevDay(date){
-    date.setDate(date.getDate() +1); // move to next day.
-    switch(date.getDay()) {
-    case 0: //Sunday
-    case 6: //Saturday
-      date = GetPrevDay(date);
-    }
-    return date;
-  }
-  
-  function FormatDate(date){
-    var months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
-  
-    return date.getDate() + " " + months[date.getMonth()] +  " " + date.getFullYear();
-  }
-  
-  function TestprevDate(){
-    var date = new Date(document.getElementById("TestprevDate").value);
-    document.getElementById("result").innerHTML += "<br/>Selected day's next day is: " + FormatDate(GetPrevDay(date));
-  }
-  </script>
+var date = new Date();
+var day = date.getDate();
+var year = date.getFullYear();
+
+var monthNames = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+var dayNames = ["Dimanche", "Lundu", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+
+var monthLabel = document.getElementsByClassName('month-label')[0].innerHTML = monthNames[date.getMonth()];
+
+var dayLabel = document.getElementsByClassName("day-label")[0].innerHTML = day;
+
+var weekdayLabel = document.getElementsByClassName("weekday-label")[0].innerHTML = dayNames[date.getDay(0)];
+</script>
