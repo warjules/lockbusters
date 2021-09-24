@@ -738,7 +738,7 @@ Vous pouvez jouer en simultané sur DEUX SCENARIO différents.
 
 
 			
-			<form action="mail.php" method="post">
+			<form method="post">
 				<div>
 					<div class="row">
 						<div class="col-6 col-12-medium">
@@ -755,10 +755,25 @@ Vous pouvez jouer en simultané sur DEUX SCENARIO différents.
 						</div>
 						<div class="col-12">
 							<input type="submit" value="Envoyer" />
+							
 						</div>
 					</div>
 				</div>
 			</form>
+			<?php
+    if (isset($_POST['message'])) {
+        $position_arobase = strpos($_POST['email'], '@');
+        if ($position_arobase === false)
+            echo '<p>Votre email doit comporter un arobase.</p>';
+        else {
+            $retour = mail('jules@free.fr', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
+            if($retour)
+                echo '<p>Votre message a été envoyé.</p>';
+            else
+                echo '<p>Erreur.</p>';
+        }
+    }
+    ?>
 
 
 		</article>
