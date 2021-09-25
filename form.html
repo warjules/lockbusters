@@ -1,0 +1,36 @@
+<form method="post">
+    <div>
+        <div class="row">
+            <div class="col-6 col-12-medium">
+                <input type="text" name="name" placeholder="Prénom" />
+            </div>
+            <div class="col-6 col-12-medium">
+                <input type="text" name="email" placeholder="Email" />
+            </div>
+            <div class="col-12">
+                <input type="text" name="subject" placeholder="Sujet" />
+            </div>
+            <div class="col-12">
+                <textarea name="message" placeholder="Votre Message" rows="6"></textarea>
+            </div>
+            <div class="col-12">
+                <input type="submit" value="Envoyer" />
+                
+            </div>
+        </div>
+    </div>
+</form>
+<?php
+if (isset($_POST['message'])) {
+$position_arobase = strpos($_POST['email'], '@');
+if ($position_arobase === false)
+echo '<p>Votre email doit comporter un arobase.</p>';
+else {
+$retour = mail('jules@free.fr', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
+if($retour)
+    echo '<p>Votre message a été envoyé.</p>';
+else
+    echo '<p>Erreur.</p>';
+}
+}
+?>
