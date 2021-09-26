@@ -738,42 +738,8 @@ Vous pouvez jouer en simultané sur DEUX SCENARIO différents.
 
 
 			
-			<form method="post">
-				<div>
-					<div class="row">
-						<div class="col-6 col-12-medium">
-							<input type="text" name="name" placeholder="Prénom" />
-						</div>
-						<div class="col-6 col-12-medium">
-							<input type="text" name="email" placeholder="Email" />
-						</div>
-						<div class="col-12">
-							<input type="text" name="subject" placeholder="Sujet" />
-						</div>
-						<div class="col-12">
-							<textarea name="message" placeholder="Votre Message" rows="6"></textarea>
-						</div>
-						<div class="col-12">
-							<input type="submit" value="Envoyer" />
-							
-						</div>
-					</div>
-				</div>
-			</form>
-			<?php
-    if (isset($_POST['message'])) {
-        $position_arobase = strpos($_POST['email'], '@');
-        if ($position_arobase === false)
-            echo '<p>Votre email doit comporter un arobase.</p>';
-        else {
-            $retour = mail('jules@free.fr', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
-            if($retour)
-                echo '<p>Votre message a été envoyé.</p>';
-            else
-                echo '<p>Erreur.</p>';
-        }
-    }
-    ?>
+			<script type="text/javascript" src="https://form.jotform.com/jsform/212672902232348"></script>
+			
 
 
 		</article>
@@ -842,17 +808,11 @@ Vous pouvez jouer en simultané sur DEUX SCENARIO différents.
 			</i><i class="fas fa-sign-out-alt"></i>
 			</a>	 
 			<h3>Les tarifs</h3>
-			
-
 				<header>
-
-				
 				Nos tarifs dépendent de deux facteurs : le nombre de joueurs dans l’équipe et le créneau horaire (heure creuse, heure pleine ou heure gourmande).
 			</header>
 			<article>
-
 				<section>
-		  
 			  <h4>HEURES GOURMANDES </h4>
 			<h5>20h en semaine et le samedi</h5>
 		  2 joueurs : 100€ soit 50€ / joueur <br>

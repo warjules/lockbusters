@@ -1338,7 +1338,7 @@ input, select, textarea {
 	body {
 		background-image: url('images/chef.png'), linear-gradient(173deg, rgba(242,0,109,1) 6%, rgba(41,0,18,1) 50%);
 		background-repeat: no-repeat;
-		background-size: 11%, 100%;
+		background-size: 12%, 100%;
 		background-position: right 50% top 35vh, center;
 		background-attachment: fixed, fixed;
 		overflow-y: hidden, scroll;
@@ -1364,13 +1364,13 @@ input, select, textarea {
 
 	@keyframes breath {
 		0% {
-			background-size: 11%, 100%;
+			background-size: 12%, 100%;
 		}
 		50% {
 			background-size: 9%, 100%;
 		}
 		100% {
-			background-size: 11%, 100%;
+			background-size: 12%, 100%;
 		}
 	}
 	
