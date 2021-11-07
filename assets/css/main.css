@@ -1323,10 +1323,10 @@ input, select, textarea {
 		background-position: right 50% top 40vh, center;
 		background-attachment: fixed, fixed;
 		overflow-y: hidden, scroll;
-		animation: breathmobile 1.1s normal 7;
-		-moz-animation: breathmobile 1.1s normal 7;
-		-webkit-animation: breathmobile 1.1s normal 7;
-		-ms-animation: breathmobile 1.1s normal 7;
+		animation: breathmobile 1.1s normal 9;
+		-moz-animation: breathmobile 1.1s normal 9;
+		-webkit-animation: breathmobile 1.1s normal 9;
+		-ms-animation: breathmobile 1.1s normal 9;
 
 	}	
 	}
@@ -1668,6 +1668,11 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
+
+
+		
+
+
 
 /* Button */
 
@@ -2154,6 +2159,27 @@ input, select, textarea {
 						-ms-object-position: center;
 						object-position: center;
 					}
+
+
+					#main > .panel.intro .pic .nouveau {
+						display: block;
+						position: absolute;
+						right: 0;
+						top: 1em;
+						right:0;
+						margin-top: 0;
+						width: 9em;
+						height: 1.75em;
+						background: #F2006D;
+						color: #ffffff;
+						text-align: center;
+						line-height: 1.75em;
+						font-size: 0.6em;
+						z-index: 1;
+						box-shadow: -2px 2px 2em #000;
+						
+					}
+
 
 					#main > .panel.intro .pic .arrow {
 						display: block;
