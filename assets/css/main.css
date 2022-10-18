@@ -1342,10 +1342,10 @@ input, select, textarea {
 		background-position: right 50% top 35vh, center;
 		background-attachment: fixed, fixed;
 		overflow-y: hidden, scroll;
-		animation: breath 1s normal 6;
-		-moz-animation: breath 1s normal 6;
-		-webkit-animation: breath 1s normal 6;
-		-ms-animation: breath 1s normal 6;
+		animation: breath 3s normal 2;
+		-moz-animation: breath 3s normal 2;
+		-webkit-animation: breath 3s normal 2;
+		-ms-animation: breath 3s normal 2;
 
 	}	
 	}
@@ -1355,7 +1355,7 @@ input, select, textarea {
 			background-size: 28%, 100%;
 		}
 		50% {
-			background-size: 25%, 100%;
+			background-size: 27%, 100%;
 		}
 		100% {
 			background-size: 28%, 100%;
@@ -1367,7 +1367,7 @@ input, select, textarea {
 			background-size: 12%, 100%;
 		}
 		50% {
-			background-size: 9%, 100%;
+			background-size: 11%, 100%;
 		}
 		100% {
 			background-size: 12%, 100%;
