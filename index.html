@@ -5,93 +5,112 @@
 
     <style>
         html, body, section {
-          block-size: 100%;
-        }
-        
-        html {
-          scroll-snap-type: y mandatory;
-        }
-        
-        section {
-          scroll-snap-align: start;
-          scroll-snap-stop: always;
-          display: flex;
-           flex-direction: column;
-        flex-wrap: wrap; 
-          align-items: center;
-          justify-content: center;
-        }
-        
-        section:nth-of-type(even) {
-          color: white;
-          background: black;
-        }
-        
-        section:nth-of-type(odd) {
-          color: black;
-          background: white;
-        }
-        
-        body {
-          margin: 0;
-        }
-        
+  block-size: 100%;
+}
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+   
+  display: flex;
+   flex-direction: column;
+flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+section:nth-of-type(odd) {
+  color: black;
+  background: white;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+H1  {
+font-size: 2rem;
+ padding: 0 3%;
+  text-align: center;
+  }
+
+p {
+font-size: 0.8rem;
+ padding: 0 3%;
+  text-align: center;
+
+  bottom: 20px;
+
+  }
 
 .container {
-  margin: auto;
-
-  background: #fff;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-/* mak images fill their container*/
-img {
-  max-width: 100%;
-  height: 100%;
-}
-img:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-/* CSS Grid*/
-.img-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1px;
+.photos {
+  display: flex;
+  background-color: #000;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  padding: 0;
+  max-width: 980px;
 }
 
-/* Media Query for changing grid on bigger screens*/
+.photos img {
+  display: block;
+  float: left;
+  flex: 0 0 auto;
+  background-color: #fff;
+}
 
-/* Bigger than Phones(tablet) */
-@media only screen and (min-width: 750px) {
-  .img-grid {
-    grid-template-columns: repeat(5, 1fr);
+
+@media screen and (min-width: 1024px) {
+  .photos img {
+    width: calc(100%/6);
+    height: calc(100%/6);
   }
 }
 
-/* Bigger than Phones(laptop / desktop) */
-@media only screen and (min-width: 970px) {
-  .img-grid {
-    grid-template-columns: repeat(7, 1fr);
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .photos img {
+    width: calc(100%/6);
+    height: calc(100%/6);
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .photos img {
+    width: calc(100%/4);
+    height: calc(100%/4);
+  }
+}
 
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .photos img {
+    width: calc(100%/3);
+    height: calc(100%/3);
+  }
+}
 
-        H1  {
-        font-size: 2rem;
-         padding: 0 3%;
-          text-align: center;
-          }
-        
-        p {
-        font-size: 0.8rem;
-         padding: 0 3%;
-          text-align: center;
-          bottom: 20px;
-        
-          }
+@media screen  and (max-width: 320px) {
+  .photos img {
+    width: 100%;
+    height: 100%;
+  }
+}
         </style>
 </head>
 <body>
@@ -105,59 +124,23 @@ img:hover {
       
       <section style=" block-size: 250%;">
 
-        <div class="container">
-            <div class="img-grid">
-              <img src="https://static.pexels.com/photos/160107/pexels-photo-160107.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/373076/pexels-photo-373076.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/247932/pexels-photo-247932.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/96381/pexels-photo-96381.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/450035/pexels-photo-450035.jpeg" alt="">
-                <img src="https://static.pexels.com/photos/160107/pexels-photo-160107.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/373076/pexels-photo-373076.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg" alt="">  <img src="https://static.pexels.com/photos/160107/pexels-photo-160107.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/373076/pexels-photo-373076.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/247932/pexels-photo-247932.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/96381/pexels-photo-96381.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/450035/pexels-photo-450035.jpeg" alt="">
-                <img src="https://static.pexels.com/photos/160107/pexels-photo-160107.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/373076/pexels-photo-373076.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/247932/pexels-photo-247932.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/96381/pexels-photo-96381.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/450035/pexels-photo-450035.jpeg" alt="">
-                <img src="https://static.pexels.com/photos/160107/pexels-photo-160107.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/373076/pexels-photo-373076.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/247932/pexels-photo-247932.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/96381/pexels-photo-96381.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/450035/pexels-photo-450035.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/247932/pexels-photo-247932.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/96381/pexels-photo-96381.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/450035/pexels-photo-450035.jpeg" alt="">
-                <img src="https://static.pexels.com/photos/160107/pexels-photo-160107.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/373076/pexels-photo-373076.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/247932/pexels-photo-247932.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/96381/pexels-photo-96381.jpeg" alt="">
-              <img src="https://static.pexels.com/photos/450035/pexels-photo-450035.jpeg" alt="">
+          <div class="container">
+            <div class="photos">
+              <img src="http://fakeimg.pl/360x360/000/?text=1">
+              <img src="http://fakeimg.pl/360x360/111/?text=2">
+              <img src="http://fakeimg.pl/360x360/222/?text=3">
+              <img src="http://fakeimg.pl/360x360/333/?text=4">
+              <img src="http://fakeimg.pl/360x360/444/?text=5">
+              <img src="http://fakeimg.pl/360x360/555/?text=6">
+              <img src="http://fakeimg.pl/360x360/666/?text=7">
+              <img src="http://fakeimg.pl/360x360/777/?text=8">
+              <img src="http://fakeimg.pl/360x360/888/?text=9">
+              <img src="http://fakeimg.pl/360x360/999/?text=10">
+              <img src="http://fakeimg.pl/360x360/aaa/?text=11">
+              <img src="http://fakeimg.pl/360x360/bbb/?text=12">
             </div>
           </div>
-                
-      </section>
+          </section>
       
       
       <section>
