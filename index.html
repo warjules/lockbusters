@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         html, body, section {
@@ -10,9 +10,6 @@
 
 html {
   scroll-snap-type: y mandatory;
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
 }
 
 section {
@@ -81,26 +78,41 @@ font-size: 0.8em;
 }
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:470px) {
   .photos img {
     width: calc(100%/4);
     height: calc(100%/4);
   }
   H1  {
-font-size: 3.6em;
+font-size: 1.7em;
 padding: 0 5%;
-color:tomato;
   }
-
+  
 p {
-font-size: 1.9em;
+font-size: 0.8em;
   }
   
 }
 
+@media screen and (max-width:320px) {
+  .photos img {
+    width: calc(100%/4);
+    height: calc(100%/4);
+  }
+  H1  {
+font-size: 1.5em;
+  }
+  
+p {
+font-size: 0.7em;
+  }
+  
+
+
 
         </style>
 </head>
+
 <body>
 
 
@@ -190,8 +202,7 @@ font-size: 1.9em;
           <img src="http://fakeimg.pl/360x360/111/?text=2">
           <img src="http://fakeimg.pl/360x360/222/?text=3">
           <img src="http://fakeimg.pl/360x360/333/?text=4">
-          <img src="http://fakeimg.pl/360x360/444/?text=5">
-          <img src="http://fakeimg.pl/360x360/555/?text=6">
+        
    
         </div>
       </div>
@@ -229,9 +240,3 @@ font-size: 1.9em;
 
 </body>
 </html>
-
-
-
-    
-    
-    
