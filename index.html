@@ -10,6 +10,9 @@
 
 html {
   scroll-snap-type: y mandatory;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 section {
@@ -48,7 +51,6 @@ p {
 font-size: 0.8em;
  padding: 0 3%;
   text-align: center;
-
   bottom: 20px;
 
   }
@@ -79,7 +81,7 @@ font-size: 0.8em;
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1024px) {
   .photos img {
     width: calc(100%/4);
     height: calc(100%/4);
@@ -87,6 +89,7 @@ font-size: 0.8em;
   H1  {
 font-size: 3.6em;
 padding: 0 5%;
+color:tomato;
 
   }
 
