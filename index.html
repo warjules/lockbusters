@@ -53,7 +53,7 @@ font-size: 0.8em;
   }
 
 .container {
-  max-width: 1024px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -106,9 +106,66 @@ font-size: 1.5em;
 p {
 font-size: 0.7em;
   }
-  
+}
 
 
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#open-modal-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#open-modal-button:hover {
+    background-color: #45a049;
+}
+
+#close-modal-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
 
         </style>
 </head>
@@ -122,11 +179,51 @@ font-size: 0.7em;
         <p>(crises d'angoisse, anxiété généralisée et "cas à part")</p>
       </section>
 
+    
+     
+      
+      <section>
+        <h1>
+      à sortir de l'état d'urgence permanent</h1>
+      </section>
+      
+      <section>
+        <h1>à reprendre le contrôle sur leur corps</h1>
+      <p>(symptômes et sensations désagréables)</p>
+      </section>
+      
+      
+      
+      <section>
+        <h1>à éliminer les pensées toxiques</h1>
+        <p>(schémas répétitifs, pensées parasites et peurs)</p>
+      </section>
+      <section>
+        <h1>et à reprendre le contrôle de leur vie</h1>
+        <p>(aimer ce qu'elle voit dans le miroir)</p>
+      
+      </section>
+      
+      <section>
+        <h1>Je m'appelle Marine Garnier</h1>
+        <p>Et j'ai aidé près de 800 femmes à renaître de l'anxiété</p>
+      </section>
+
       <section style="block-size: max-content">
-   
+
+        <button id="open-modal-button">Open Modal</button>
+
+<div class="modal" id="song-modal">
+    <div class="modal-content">
+        <span class="close-button" id="close-modal-button">×</span>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
       <div class="container">
+
         <div class="photos">
-          <img src="http://fakeimg.pl/360x360/000/?text=1">
+          <img src="https://res.cloudinary.com/dmfj71x7p/image/upload/v1694563919/image.76410.3545089_r6sh0p.jpg">
           <img src="http://fakeimg.pl/360x360/111/?text=2">
           <img src="http://fakeimg.pl/360x360/222/?text=3">
           <img src="http://fakeimg.pl/360x360/333/?text=4">
@@ -210,33 +307,29 @@ font-size: 0.7em;
           
     </section>
       
-      
-      <section>
-        <h1>
-      à sortir de l'état d'urgence permanent</h1>
-      </section>
-      
-      <section>
-        <h1>à reprendre le contrôle sur leur corps</h1>
-      <p>(symptômes et sensations désagréables)</p>
-      </section>
-      
-      
-      
-      <section>
-        <h1>à éliminer les pensées toxiques</h1>
-        <p>(schémas répétitifs, pensées parasites et peurs)</p>
-      </section>
-      <section>
-        <h1>et à reprendre le contrôle de leur vie</h1>
-        <p>(aimer ce qu'elle voit dans le miroir)</p>
-      
-      </section>
-      
-      <section>
-        <h1>Je m'appelle Marine Garnier</h1>
-        <p>Et j'ai aidé près de 800 femmes à renaître de l'anxiété</p>
-      </section>
+
 
 </body>
+<footer>
+
+<script>
+  const openModalButton = document.getElementById('open-modal-button');
+const closeModalButton = document.getElementById('close-modal-button');
+const songModal = document.getElementById('song-modal');
+
+openModalButton.addEventListener('click', () => {
+    songModal.style.display = 'block';
+});
+
+closeModalButton.addEventListener('click', () => {
+    songModal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === songModal) {
+        songModal.style.display = 'none';
+    }
+});
+</script>
+</footer>
 </html>
